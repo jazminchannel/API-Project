@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>apartments</title>
+</head>
+<body>
+  <h1>The Best Apartments</h1>
+
+  {% for apartment in apartments %}
+  <h3>
+    <a href="/apartments/{{apartment.id}}">
+      {{apartment.name}}
+    </a>
+  </h3>
+    <h6>2B2B price is {{apartment.price}}</h6>
+  {% endfor %}
+
+</body>
+</html>
